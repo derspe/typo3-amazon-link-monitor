@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang_js.xlf" product-name="derspe_amazon_link_monitor">
+		<header/>
+		<body>
+			<trans-unit id="app.title" resname="app.title">
+				<source>Amazon Link Monitor</source>
+			</trans-unit>
+			<trans-unit id="app.site" resname="app.site">
+				<source>Site</source>
+			</trans-unit>
+			<trans-unit id="tab.links" resname="tab.links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="tab.settings" resname="tab.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="action.openSettings" resname="action.openSettings">
+				<source>Open settings</source>
+			</trans-unit>
+			<trans-unit id="error.notConfigured" resname="error.notConfigured">
+				<source>Not configured yet</source>
+			</trans-unit>
+			<trans-unit id="table.showAll" resname="table.showAll">
+				<source>Show all {count}</source>
+			</trans-unit>
+			<trans-unit id="table.showLess" resname="table.showLess">
+				<source>Show less</source>
+			</trans-unit>
+			<trans-unit id="time.today" resname="time.today">
+				<source>today</source>
+			</trans-unit>
+			<trans-unit id="time.yesterday" resname="time.yesterday">
+				<source>yesterday</source>
+			</trans-unit>
+			<trans-unit id="time.daysAgo" resname="time.daysAgo">
+				<source>{days} days ago</source>
+			</trans-unit>
+			<trans-unit id="preset.days" resname="preset.days">
+				<source>{n} days</source>
+			</trans-unit>
+			<trans-unit id="preset.all" resname="preset.all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="hint.noApi" resname="hint.noApi">
+				<source>The Creators API is not configured: links are checked via HTTP only. Amazon often answers automated requests with bot protection – those links are reported as "unknown".</source>
+			</trans-unit>
+			<trans-unit id="history.title" resname="history.title">
+				<source>History</source>
+			</trans-unit>
+			<trans-unit id="history.empty" resname="history.empty">
+				<source>No link checks in this period yet</source>
+			</trans-unit>
+			<trans-unit id="stats.broken" resname="stats.broken">
+				<source>Broken</source>
+			</trans-unit>
+			<trans-unit id="stats.warning" resname="stats.warning">
+				<source>Check needed</source>
+			</trans-unit>
+			<trans-unit id="stats.warning.hint" resname="stats.warning.hint">
+				<source>Not available via API, unknown (bot protection, errors) or not checked yet</source>
+			</trans-unit>
+			<trans-unit id="stats.ok" resname="stats.ok">
+				<source>OK</source>
+			</trans-unit>
+			<trans-unit id="stats.total" resname="stats.total">
+				<source>Total</source>
+			</trans-unit>
+			<trans-unit id="stats.pages" resname="stats.pages">
+				<source>on {n} pages</source>
+			</trans-unit>
+			<trans-unit id="stats.neverCrawled" resname="stats.neverCrawled">
+				<source>never</source>
+			</trans-unit>
+			<trans-unit id="crawl.start" resname="crawl.start">
+				<source>Check links now</source>
+			</trans-unit>
+			<trans-unit id="crawl.last" resname="crawl.last">
+				<source>Last check: {date}</source>
+			</trans-unit>
+			<trans-unit id="events.title" resname="events.title">
+				<source>Latest changes</source>
+			</trans-unit>
+			<trans-unit id="event.added" resname="event.added">
+				<source>new</source>
+			</trans-unit>
+			<trans-unit id="event.removed" resname="event.removed">
+				<source>removed</source>
+			</trans-unit>
+			<trans-unit id="event.ok" resname="event.ok">
+				<source>OK again</source>
+			</trans-unit>
+			<trans-unit id="event.broken" resname="event.broken">
+				<source>broken</source>
+			</trans-unit>
+			<trans-unit id="event.warning" resname="event.warning">
+				<source>check needed</source>
+			</trans-unit>
+			<trans-unit id="event.unknown" resname="event.unknown">
+				<source>unknown</source>
+			</trans-unit>
+			<trans-unit id="status.ok" resname="status.ok">
+				<source>OK</source>
+			</trans-unit>
+			<trans-unit id="status.broken" resname="status.broken">
+				<source>Broken</source>
+			</trans-unit>
+			<trans-unit id="status.warning" resname="status.warning">
+				<source>Not via API</source>
+			</trans-unit>
+			<trans-unit id="status.unknown" resname="status.unknown">
+				<source>Unknown</source>
+			</trans-unit>
+			<trans-unit id="status.unchecked" resname="status.unchecked">
+				<source>Unchecked</source>
+			</trans-unit>
+			<trans-unit id="reason.ItemNotAccessible" resname="reason.ItemNotAccessible">
+				<source>The product exists but is not available through the Creators API – please check manually.</source>
+			</trans-unit>
+			<trans-unit id="reason.InvalidParameterValue" resname="reason.InvalidParameterValue">
+				<source>Amazon does not know this ASIN (anymore).</source>
+			</trans-unit>
+			<trans-unit id="reason.ItemNotFound" resname="reason.ItemNotFound">
+				<source>Product not found.</source>
+			</trans-unit>
+			<trans-unit id="reason.shortlink-dead" resname="reason.shortlink-dead">
+				<source>The short link does not redirect anymore.</source>
+			</trans-unit>
+			<trans-unit id="reason.shortlink-unreachable" resname="reason.shortlink-unreachable">
+				<source>The short link service was not reachable.</source>
+			</trans-unit>
+			<trans-unit id="reason.bot-protection" resname="reason.bot-protection">
+				<source>Amazon answered with bot protection (captcha).</source>
+			</trans-unit>
+			<trans-unit id="reason.unreachable" resname="reason.unreachable">
+				<source>Amazon was not reachable.</source>
+			</trans-unit>
+			<trans-unit id="reason.no-api-answer" resname="reason.no-api-answer">
+				<source>The API returned no result for this ASIN.</source>
+			</trans-unit>
+			<trans-unit id="reason.http-503" resname="reason.http-503">
+				<source>HTTP 503 – usually bot protection.</source>
+			</trans-unit>
+			<trans-unit id="method.api" resname="method.api">
+				<source>Creators API</source>
+			</trans-unit>
+			<trans-unit id="method.http" resname="method.http">
+				<source>HTTP request</source>
+			</trans-unit>
+			<trans-unit id="method.shortlink" resname="method.shortlink">
+				<source>Short link resolution</source>
+			</trans-unit>
+			<trans-unit id="links.empty" resname="links.empty">
+				<source>No data yet – start the first check.</source>
+			</trans-unit>
+			<trans-unit id="links.noMatch" resname="links.noMatch">
+				<source>No links match the filter.</source>
+			</trans-unit>
+			<trans-unit id="links.search" resname="links.search">
+				<source>Search URL, ASIN, product, page…</source>
+			</trans-unit>
+			<trans-unit id="links.expandAll" resname="links.expandAll">
+				<source>Expand all</source>
+			</trans-unit>
+			<trans-unit id="links.collapseAll" resname="links.collapseAll">
+				<source>Collapse all</source>
+			</trans-unit>
+			<trans-unit id="links.count" resname="links.count">
+				<source>{n} links</source>
+			</trans-unit>
+			<trans-unit id="links.brokenCount" resname="links.brokenCount">
+				<source>{n} broken</source>
+			</trans-unit>
+			<trans-unit id="links.warningCount" resname="links.warningCount">
+				<source>{n} to check</source>
+			</trans-unit>
+			<trans-unit id="links.allOk" resname="links.allOk">
+				<source>all OK</source>
+			</trans-unit>
+			<trans-unit id="filter.all" resname="filter.all">
+				<source>All links</source>
+			</trans-unit>
+			<trans-unit id="filter.broken" resname="filter.broken">
+				<source>Broken</source>
+			</trans-unit>
+			<trans-unit id="filter.warning" resname="filter.warning">
+				<source>Check needed</source>
+			</trans-unit>
+			<trans-unit id="filter.ok" resname="filter.ok">
+				<source>OK</source>
+			</trans-unit>
+			<trans-unit id="detail.context" resname="detail.context">
+				<source>Context</source>
+			</trans-unit>
+			<trans-unit id="detail.text" resname="detail.text">
+				<source>Link text</source>
+			</trans-unit>
+			<trans-unit id="detail.affiliateId" resname="detail.affiliateId">
+				<source>Affiliate ID</source>
+			</trans-unit>
+			<trans-unit id="detail.reason" resname="detail.reason">
+				<source>Reason</source>
+			</trans-unit>
+			<trans-unit id="detail.availability" resname="detail.availability">
+				<source>Availability</source>
+			</trans-unit>
+			<trans-unit id="detail.method" resname="detail.method">
+				<source>Checked via</source>
+			</trans-unit>
+			<trans-unit id="detail.lastChecked" resname="detail.lastChecked">
+				<source>Last checked</source>
+			</trans-unit>
+			<trans-unit id="settings.title" resname="settings.title">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="settings.save" resname="settings.save">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="settings.saved" resname="settings.saved">
+				<source>Saved</source>
+			</trans-unit>
+			<trans-unit id="settings.secretSet" resname="settings.secretSet">
+				<source>•••••••• (stored – leave empty to keep)</source>
+			</trans-unit>
+			<trans-unit id="settings.adminOnly" resname="settings.adminOnly">
+				<source>Only administrators can change these settings.</source>
+			</trans-unit>
+			<trans-unit id="settings.domains" resname="settings.domains">
+				<source>Amazon domains</source>
+			</trans-unit>
+			<trans-unit id="settings.domains.description" resname="settings.domains.description">
+				<source>Links to these hosts (and their subdomains) are monitored. Comma separated.</source>
+			</trans-unit>
+			<trans-unit id="settings.sitemap" resname="settings.sitemap">
+				<source>Sitemap URL</source>
+			</trans-unit>
+			<trans-unit id="settings.sitemap.description" resname="settings.sitemap.description">
+				<source>Leave empty to use the sitemap.xml of the site base.</source>
+			</trans-unit>
+			<trans-unit id="settings.api" resname="settings.api">
+				<source>Amazon Creators API (recommended)</source>
+			</trans-unit>
+			<trans-unit id="settings.api.active" resname="settings.api.active">
+				<source>active</source>
+			</trans-unit>
+			<trans-unit id="settings.api.inactive" resname="settings.api.inactive">
+				<source>not configured</source>
+			</trans-unit>
+			<trans-unit id="settings.api.description" resname="settings.api.description">
+				<source>With API access, links with an ASIN are verified directly at Amazon – reliable and without bot protection. The check never adds your partner tag to a visit, so it does not count as a click.</source>
+			</trans-unit>
+			<trans-unit id="settings.api.credentialId" resname="settings.api.credentialId">
+				<source>Credential ID</source>
+			</trans-unit>
+			<trans-unit id="settings.api.credentialSecret" resname="settings.api.credentialSecret">
+				<source>Credential secret</source>
+			</trans-unit>
+			<trans-unit id="settings.api.partnerTag" resname="settings.api.partnerTag">
+				<source>Partner tag</source>
+			</trans-unit>
+			<trans-unit id="settings.api.partnerTag.description" resname="settings.api.partnerTag.description">
+				<source>Your Associates tracking ID (required by the API).</source>
+			</trans-unit>
+			<trans-unit id="settings.api.marketplace" resname="settings.api.marketplace">
+				<source>Marketplace</source>
+			</trans-unit>
+			<trans-unit id="settings.api.version" resname="settings.api.version">
+				<source>Credential version</source>
+			</trans-unit>
+			<trans-unit id="settings.api.tokenUrl" resname="settings.api.tokenUrl">
+				<source>Token URL</source>
+			</trans-unit>
+			<trans-unit id="settings.api.tokenUrl.description" resname="settings.api.tokenUrl.description">
+				<source>OAuth token endpoint of your API region.</source>
+			</trans-unit>
+			<trans-unit id="settings.api.baseUrl" resname="settings.api.baseUrl">
+				<source>API base URL</source>
+			</trans-unit>
+			<trans-unit id="settings.scheduler" resname="settings.scheduler">
+				<source>Automatic checks: add the scheduler task "amazon-link-monitor:check" (e.g. daily). It continues unfinished checks on the next run.</source>
+			</trans-unit>
+			<trans-unit id="job.pending" resname="job.pending">
+				<source>Waiting to start…</source>
+			</trans-unit>
+			<trans-unit id="job.crawl.pages" resname="job.crawl.pages">
+				<source>Page {n}/{total}: {url}</source>
+			</trans-unit>
+			<trans-unit id="job.crawl.checking" resname="job.crawl.checking">
+				<source>Checking links {n}/{total}…</source>
+			</trans-unit>
+			<trans-unit id="job.crawl.done" resname="job.crawl.done">
+				<source>Done: {total} links, {broken} broken, {warning} not via API, {unknown} unknown</source>
+			</trans-unit>
+			<trans-unit id="widget.noBroken" resname="widget.noBroken">
+				<source>No broken links 🎉</source>
+			</trans-unit>
+			<trans-unit id="widget.more" resname="widget.more">
+				<source>… and {n} more</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

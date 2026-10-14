@@ -1,0 +1,70 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Derspe\AmazonLinkMonitor\:
+    resource: '../Classes/*'
+    exclude:
+      - '../Classes/Http/ApiException.php'
+      - '../Classes/Service/AmazonUrl.php'
+      - '../Classes/Service/LinkExtractor.php'
+      - '../Classes/Widgets/LinkMonitorWidget.php'
+
+  cache.derspe_amazon_link_monitor:
+    class: TYPO3\CMS\Core\Cache\Frontend\FrontendInterface
+    factory: ['@TYPO3\CMS\Core\Cache\CacheManager', 'getCache']
+    arguments: ['derspe_amazon_link_monitor']
+
+  Derspe\AmazonLinkMonitor\Service\CreatorsApiClient:
+    arguments:
+      $cache: '@cache.derspe_amazon_link_monitor'
+
+  Derspe\AmazonLinkMonitor\Controller\Backend\ApiController:
+    public: true
+
+  dashboard.widget.amazonLinkMonitorStatus:
+    class: Derspe\AmazonLinkMonitor\Widgets\LinkMonitorWidget
+    arguments:
+      $options:
+        view: status
+    tags:
+      - name: dashboard.widget
+        identifier: 'amazonLinkMonitorStatus'
+        groupNames: 'amazonLinkMonitor'
+        title: 'LLL:EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf:widget.status.title'
+        description: 'LLL:EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf:widget.status.description'
+        iconIdentifier: 'content-widget-amazon-link-monitor'
+        height: 'small'
+        width: 'medium'
+
+  dashboard.widget.amazonLinkMonitorBroken:
+    class: Derspe\AmazonLinkMonitor\Widgets\LinkMonitorWidget
+    arguments:
+      $options:
+        view: broken
+    tags:
+      - name: dashboard.widget
+        identifier: 'amazonLinkMonitorBroken'
+        groupNames: 'amazonLinkMonitor'
+        title: 'LLL:EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf:widget.broken.title'
+        description: 'LLL:EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf:widget.broken.description'
+        iconIdentifier: 'content-widget-amazon-link-monitor'
+        height: 'medium'
+        width: 'medium'
+
+  dashboard.widget.amazonLinkMonitorHistory:
+    class: Derspe\AmazonLinkMonitor\Widgets\LinkMonitorWidget
+    arguments:
+      $options:
+        view: history
+    tags:
+      - name: dashboard.widget
+        identifier: 'amazonLinkMonitorHistory'
+        groupNames: 'amazonLinkMonitor'
+        title: 'LLL:EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf:widget.history.title'
+        description: 'LLL:EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf:widget.history.description'
+        iconIdentifier: 'content-widget-amazon-link-monitor'
+        height: 'medium'
+        width: 'medium'

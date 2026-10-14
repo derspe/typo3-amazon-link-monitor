@@ -1,0 +1,48 @@
+{
+    "name": "derspe/amazon-link-monitor",
+    "type": "typo3-cms-extension",
+    "description": "Monitors Amazon (affiliate) links on your TYPO3 site: crawls the sitemap, checks every link via the Amazon Creators API or HTTP, keeps a status history and reports broken links in a backend module and dashboard widgets.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "amazon",
+        "affiliate",
+        "broken links",
+        "link checker",
+        "dashboard"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Frank Specht",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-backend": "^14.3",
+        "typo3/cms-core": "^14.3",
+        "typo3/cms-dashboard": "^14.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "suggest": {
+        "typo3/cms-scheduler": "Runs the link check automatically"
+    },
+    "autoload": {
+        "psr-4": {
+            "Derspe\\AmazonLinkMonitor\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Derspe\\AmazonLinkMonitor\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "derspe_amazon_link_monitor"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:derspe_amazon_link_monitor/Resources/Private/Language/locallang.xlf" product-name="derspe_amazon_link_monitor">
+		<header/>
+		<body>
+			<trans-unit id="widget.group" resname="widget.group">
+				<source>Amazon Link Monitor</source>
+				<target>Amazon Link Monitor</target>
+			</trans-unit>
+			<trans-unit id="widget.settings.site" resname="widget.settings.site">
+				<source>Site</source>
+				<target>Site</target>
+			</trans-unit>
+			<trans-unit id="widget.status.title" resname="widget.status.title">
+				<source>Amazon links: status</source>
+				<target>Amazon-Links: Status</target>
+			</trans-unit>
+			<trans-unit id="widget.status.description" resname="widget.status.description">
+				<source>Broken, unclear and working Amazon links of the last check.</source>
+				<target>Defekte, unklare und funktionierende Amazon-Links der letzten Prüfung.</target>
+			</trans-unit>
+			<trans-unit id="widget.broken.title" resname="widget.broken.title">
+				<source>Amazon links: broken</source>
+				<target>Amazon-Links: defekt</target>
+			</trans-unit>
+			<trans-unit id="widget.broken.description" resname="widget.broken.description">
+				<source>Broken links and links that need a manual check, with the page they are on.</source>
+				<target>Defekte und manuell zu prüfende Links mit der Seite, auf der sie stehen.</target>
+			</trans-unit>
+			<trans-unit id="widget.history.title" resname="widget.history.title">
+				<source>Amazon links: history</source>
+				<target>Amazon-Links: Verlauf</target>
+			</trans-unit>
+			<trans-unit id="widget.history.description" resname="widget.history.description">
+				<source>Results of the link checks of the last 30 days.</source>
+				<target>Ergebnisse der Prüfläufe der letzten 30 Tage.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

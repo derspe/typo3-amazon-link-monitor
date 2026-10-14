@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:derspe_amazon_link_monitor/Resources/Private/Language/module.xlf" product-name="derspe_amazon_link_monitor">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Amazon Link Monitor</source>
+			</trans-unit>
+			<trans-unit id="short_description" resname="short_description">
+				<source>Check Amazon links</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Finds Amazon links on all pages of the sitemap and checks whether the products still exist.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
