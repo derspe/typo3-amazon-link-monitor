@@ -22,6 +22,8 @@ use TYPO3\CMS\Core\Site\SiteFinder;
 )]
 final class CheckLinksCommand extends Command
 {
+    private const STEP_SECONDS = 20.0;
+
     public function __construct(
         private readonly CrawlService $crawl,
         private readonly SiteFinder $siteFinder,
@@ -52,7 +54,8 @@ final class CheckLinksCommand extends Command
             }
             $id = $active !== null ? (int)$active['uid'] : $this->crawl->start($identifier);
             while (($remaining = $deadline - microtime(true)) > 2) {
-                $job = $this->crawl->step($identifier, $id, $remaining);
+                // Short steps, so the progress is saved regularly and visible in the module
+                $job = $this->crawl->step($identifier, $id, min(self::STEP_SECONDS, $remaining));
                 if ($job === null) {
                     $output->writeln(sprintf('%s: check is processed by another process', $identifier));
                     break;
