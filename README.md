@@ -39,8 +39,21 @@ Status values: `ok`, `broken`, `warning` (not via API), `unknown`.
 
 ## Installation
 
+The package is not on Packagist yet. Add the GitHub repository to the `repositories`
+section of your project `composer.json`:
+
+```json
+{
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/derspe/typo3-amazon-link-monitor" }
+    ]
+}
+```
+
+Then install it:
+
 ```bash
-composer require derspe/amazon-link-monitor
+composer require derspe/amazon-link-monitor:dev-main
 vendor/bin/typo3 extension:setup
 ```
 

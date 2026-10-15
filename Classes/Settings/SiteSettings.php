@@ -12,7 +12,7 @@ use TYPO3\CMS\Core\Database\ConnectionPool;
 /**
  * Per-site key/value configuration, stored as JSON in tx_derspeamazonlinkmonitor_setting.
  *
- * Secrets (API token, OAuth client secret, refresh token) are encrypted with a key
+ * Secrets (the Creators API credential secret) are encrypted with a key
  * derived from the instance encryptionKey and are never sent to the browser.
  */
 final class SiteSettings
